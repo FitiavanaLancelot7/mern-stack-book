@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+
+@font-face {
+  font-family: "Pixel";
+  src: url("../src/assets/fonts/MinecraftTen-VGORe.ttf");
+}
+:root{
+  background: #020617;
+}
+body{
+  overflow-x: hidden;
+}
+
+/* BUTON */
+
+
+.button {
+  /* Other button styles such as size, font, etc. */
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+    45deg,
+    #00b7eb,
+    #2a2aff,
+    #2a2aff,
+    #f9359d,
+    #ff00ee,
+    #cc007a,
+    #cc00be
+  );
+  animation: Gradient 5s ease infinite;
+  /* Additional styles for the non-hover state can go here */
+}
+
+/* .button:hover {
+  animation: Gradient 5s ease infinite;
+} */
+
+@keyframes Gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@theme {
+  --font-family-display: "Satoshi", "sans-serif";
+  --font-family-pixel: "Pixel", "sans-serif";
+
+  --breakpoint-3xl: 1920px;
+  --shadow-moon: 15px 15px 0 0 #face3140;  
+
+  --color-neon-pink: oklch(71.7% 0.25 360);
+  --color-neon-lime: oklch(91.5% 0.258 129);
+  --color-neon-cyan: oklch(91.3% 0.139 195.8);
+}
