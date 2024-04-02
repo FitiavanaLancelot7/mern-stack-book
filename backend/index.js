@@ -23,7 +23,7 @@ App.use(cors({
     allowedHeaders: ['Content-Type'],
 }))
 
-App.get('/books', async (req, res)=>{
+App.get('/test', async (req, res)=>{
     try {
         const books = await Book.find({});
         return res.status(201).json({
