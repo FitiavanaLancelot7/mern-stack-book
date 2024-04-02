@@ -18,7 +18,7 @@ App.use(expres.json());
 // App.use(cors());
 // Option 2: custom cors(*)
 App.use(cors({
-    origin: "http://localhost:5000",
+    origin: "https://lancelot-mern.vercel.app/",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ['Content-Type'],
 }))
