@@ -33,7 +33,7 @@ router.get('/', async (req, res)=>{
         const books = await Book.find({});
         return res.status(201).json({
             count: "Ok",
-            data: books
+            data: "😁⚡"
         });
     } catch (error) {
         console.log(error.message);
