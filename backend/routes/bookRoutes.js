@@ -30,11 +30,7 @@ router.post('/', async (req, res) => {
 // Route for Get All Books from database
 router.get('/', async (req, res)=>{
     try {
-        const books = await Book.find({});
-        return res.status(201).json({
-            count: books.length,
-            data: books
-        });
+        res.send({msg: "success"})
     } catch (error) {
         console.log(error.message);
         res.status(500).send({
