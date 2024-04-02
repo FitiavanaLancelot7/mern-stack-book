@@ -13,7 +13,7 @@ const { id } = useParams();
 useEffect(()=>{
   setLoading(true);
   axios
-  .get(`http://localhost:3000/books/${id}`)
+  .get(`https://mern-stack-book-api.vercel.app/books/${id}`)
   .then((res)=>{
     setBook(res.data);
     setLoading(false);

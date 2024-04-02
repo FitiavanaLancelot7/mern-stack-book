@@ -16,7 +16,7 @@ const [showType, setShowType] = useState('table');
 useEffect(() => {
   setLoading(true);
   axios
-  .get('http://localhost:3000/books')
+  .get('https://mern-stack-book-api.vercel.app/books')
   .then((res)=> {
     setBooks(res.data.data);
     setLoading(false)

@@ -29,7 +29,7 @@ const CreateBook = () => {
     };
     setLoading(true);
     axios
-    .post('http://localhost:3000/books', data)
+    .post('https://mern-stack-book-api.vercel.app/books', data)
     
     // After the response loading will be removed
     .then(() =>{ 
