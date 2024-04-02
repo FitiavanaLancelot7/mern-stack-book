@@ -6,7 +6,7 @@ import bookRoutes from "./routes/bookRoutes.js";
 import cors from "cors";
 
 
-const { PORT, mongoDBURL } = process.env
+const { PORT, MONGO_URI } = process.env
 const App = expres();
 
 
