@@ -33,7 +33,7 @@ App.get('/', (req,res)=>{
 App.use('/books', bookRoutes);
 
 App.listen(PORT, () => {
-    connectDB(mongoDBURL);
+    connectDB(MONGO_URI);
     console.log(`The port is listening on ${PORT}`);
     });
 
