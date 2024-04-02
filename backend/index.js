@@ -1,7 +1,7 @@
 import expres from "express";
 import "dotenv/config";
 import connectDB from "./db/connectDB.js";
-import { Book } from "./models/bookModels.js";
+import Book from "./models/bookModels.js";
 import bookRoutes from "./routes/bookRoutes.js";
 import cors from "cors";
 
