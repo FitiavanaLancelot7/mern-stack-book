@@ -27,7 +27,7 @@ App.use(cors({
 
 
 App.get('/', (req,res)=>{
-    res.status(234).send('Welcome to MY MERN-STACK')
+    res.status(234).send(`Welcome to MY MERN-STACK PORT ${PORT}`)
 })
 
 App.use('/books', bookRoutes);
