@@ -33,13 +33,11 @@ App.get('/', (req,res)=>{
 
 App.use('/books', bookRoutes);
 
-const connectDB = async (MONGO_URI) =>{
-    try {
+const connectDB =  (MONGO_URI) =>{
+    
         mongoose.connect(MONGO_URI);
         console.log('DB connected');
-    } catch (error) {
-        console.log(error);
-    }
+
 }
 connectDB(MONGO_URI);
 
