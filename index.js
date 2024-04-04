@@ -17,7 +17,4 @@ App.post('/book/create', (req,res) => {
 
 
 
-App.listen(PORT, () => {
-    connectDB(MONGODB_URI);
-    console.log(`The port is listining on ${PORT}`);
-})
+connectDB(MONGODB_URI);
