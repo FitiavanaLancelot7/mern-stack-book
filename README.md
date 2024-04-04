@@ -93,7 +93,7 @@ npm run dev
 npm start
 ```
 
-Open [https://vercel.com](https://vercel.com) in your browser to view the project on vercel <img src="./frontend/src/assets/myemojii/Beaming.png" alt="Beaming" height=35 weight=35 />
+Open [https://vercel.com](https://vercel.com) in your browser to view the project on vercel <img src="./frontend/src/assets/myemojii/Beaming.png" alt="Beaming" height=20 weight=20 />
 
 ## <a name="snippets">✅ Dependencies</a>
 
