@@ -1,6 +1,6 @@
 import expres from "express";
 import "dotenv/config";
-import connectDB from "./db/connectDB.jsz";
+import connectDB from "./db/connectDB.js";
 import Book from "./models/bookModels.js";
 import bookRoutes from "./routes/bookRoutes.js";
 import cors from "cors";
@@ -32,7 +32,7 @@ App.get('/', (req,res)=>{
 
 App.use('/books', bookRoutes);
 
-App.listen(PORT, () => {
+App.listen(PORT, (req,res) => {
     connectDB(MONGO_URI);
     console.log(`The port is listening on ${PORT}`);
     });
