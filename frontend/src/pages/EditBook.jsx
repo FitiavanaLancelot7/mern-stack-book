@@ -45,7 +45,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-    .put(`http://localhost:3000/books/${id}`, data)
+    .put(`https://mern-stack-book-api.vercel.app/books/${id}`, data)
     
     // After the response loading will be removed
     .then(() =>{ 
