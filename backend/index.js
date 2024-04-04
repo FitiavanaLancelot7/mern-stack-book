@@ -1,4 +1,5 @@
 import expres from "express";
+import mongoose from "mongoose";
 import "dotenv/config";
 import connectDB from "./db/connectDB.js";
 import Book from "./models/bookModels.js";
@@ -32,10 +33,20 @@ App.get('/', (req,res)=>{
 
 App.use('/books', bookRoutes);
 
-App.listen(PORT, (req,res) => {
-    connectDB(MONGO_URI);
-    console.log(`The port is listening on ${PORT}`);
-    });
+const connectDB = async (MONGO_URI) =>{
+    try {
+        mongoose.connect(MONGO_URI);
+        console.log('DB connected');
+    } catch (error) {
+        console.log(error);
+    }
+}
+connectDB(MONGO_URI);
+
+// App.listen(PORT, (req,res) => {
+//     connectDB(MONGO_URI);
+//     console.log(`The port is listening on ${PORT}`);
+//     });
 
 
 
