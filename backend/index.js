@@ -1,7 +1,6 @@
 import expres from "express";
-import mongoose from "mongoose";
 import "dotenv/config";
-import connectDB from "./db/connectDB.js";
+import connectDB from "./db/connectDB.jsz";
 import Book from "./models/bookModels.js";
 import bookRoutes from "./routes/bookRoutes.js";
 import cors from "cors";
@@ -33,14 +32,10 @@ App.get('/', (req,res)=>{
 
 App.use('/books', bookRoutes);
 
-
-        mongoose.connect(MONGO_URI);
- 
-
-// App.listen(PORT, (req,res) => {
-//     connectDB(MONGO_URI);
-//     console.log(`The port is listening on ${PORT}`);
-//     });
+App.listen(PORT, (req,res) => {
+    connectDB(MONGO_URI);
+    console.log(`The port is listening on ${PORT}`);
+    });
 
 
 
