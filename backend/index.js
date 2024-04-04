@@ -33,13 +33,9 @@ App.get('/', (req,res)=>{
 
 App.use('/books', bookRoutes);
 
-const connectDB =  (MONGO_URI) =>{
-    
-        mongoose.connect(MONGO_URI);
-        console.log('DB connected');
 
-}
-connectDB(MONGO_URI);
+        mongoose.connect(MONGO_URI);
+ 
 
 // App.listen(PORT, (req,res) => {
 //     connectDB(MONGO_URI);
