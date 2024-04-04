@@ -95,6 +95,8 @@ npm start
 
 Open [https://vercel.com](https://vercel.com) in your browser to view the project on vercel <img src="./frontend/src/assets/myemojii/Beaming.png" alt="Beaming" height=20 weight=20 />
 
+The Project DEMO is online 👉 [https://lancelot-mern.vercel.app/](https://lancelot-mern.vercel.app/)
+
 ## <a name="snippets">✅ Dependencies</a>
 
 <details>
