@@ -32,11 +32,11 @@ App.get('/', (req,res)=>{
 
 App.use('/books', bookRoutes);
 
-connectDB(MONGO_URI);
-// App.listen(PORT, () => {
-//     // connectDB(MONGO_URI);
-//     console.log(`The port is listening on ${PORT}`);
-//     });
+// connectDB(MONGO_URI);
+App.listen(PORT, () => {
+    connectDB(MONGO_URI);
+    console.log(`The port is listening on ${PORT}`);
+    });
 
 
 
